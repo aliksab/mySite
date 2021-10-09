@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+}
+
+.wrap {
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.button a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	line-height: 10px;
+	font-weight: 500;
+	border-radius: 20px;
+	background-color: #999e9c3d;
+	display: inline-block;
+	padding: 8px;
+}
+
+.button a:hover{
+	background-color: #999e9c83;
+}
+
+.headline{
+	text-align: center;
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.header {
+	background: url(assets/img/3mockup.png) center no-repeat;
+	background-size: cover;
+	margin-bottom: 100px;
+	position: relative;
+}
+
+.header::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: linear-gradient(to left, rgba(0, 80, 131, 0.2), rgba(34, 184, 119, 0.2));
+	z-index: 1;
+}
+
+.header_wrap {
+	z-index: 2;
+	position: relative;
+	height: 100vh;
+}
+
+.header_top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+	height: 120px;
+}
+
+.logo {
+	text-decoration: none;
+}
+
+
+.logo a{
+	text-decoration: none;
+	color: rgb(172, 172, 172);
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+}
+
+.logo a:hover{
+	color: #e0e0e083;
+}
+
+.header h1{
+	text-align: center;
+	font-size: 36px;
+	line-height: 60px;
+	color: white;
+	font-weight: 400;
+	width: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	padding: 0 15px;
+	box-sizing: border-box;
+	transform: translate(-50%, -50%);
+}
+
+.header h2{
+	text-align: center;
+	font-size: 28px;
+	line-height: 60px;
+	color: rgb(241, 237, 237);
+	font-weight: 400;
+	width: 100%;
+	position: absolute;
+	left: 50%;
+	top: 60%;
+	padding: 0 15px;
+	box-sizing: border-box;
+	transform: translate(-50%, -50%);
+}
+
+.myProject {
+  position: relative;
+  overflow: hidden;
+
+  height: 100vh;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+  
+}
+
+.sidebar > div {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  
+}
+
+.sidebar h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: -30px;
+}
+
+.sidebar a {
+	text-decoration: none;
+	color: white;
+}
+
+.sidebar a:hover {
+	color: antiquewhite;
+}
+
+.main-slide {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.main-slide > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  width: 100%;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+}
+
+button:hover {
+  color: #222;
+}
+
+button:focus {
+  outline: none;
+}
+
+.myProject .controls button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 100;
+}
+
+.myProject .controls .down-button {
+  transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.myProject .controls .up-button {
+  transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+.cause__wrap {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 50px auto 50px;
+}
+
+.cause__wrap h2{
+	text-align: center;
+	font-size: 28px;
+	color: rgb(181, 172, 172);
+	font-style: oblique;
+}
+
+.cause__element {
+	position: relative;
+	overflow: visible;
+	height: 270px;
+	width: 200px;
+	flex-basis:19%;
+	text-align: center;
+	margin-bottom: 50px;
+	box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+	cursor: pointer;
+}
+
+.cause__numeric{
+	margin-top: 30px;
+	align-items: center;
+}
+
+.cause__numeric img{
+    height: 80px;
+	max-width: 100%;
+	margin: 0;
+	z-index: 10;
+}
+
+.cause__title{
+    margin: 20px 0;
+}
+
+.cause__description p{
+    font-size: 18px;
+}
+
+.contact__wrap {
+
+    margin: 50px auto 50px;
+}
+
+.contact__wrap input[type="text"], textarea{
+	border: solid 1px #c3c3c3;
+	margin-bottom: 2%;
+}
+
+.contact__wrap input[type="text"] {
+    width: 100%;
+    height: 40px;
+}
+
+.contact__wrap textarea {
+	width: 100%;
+	height: 200px;
+}
+
+.contact__wrap input[type="submit"] {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0); 
+	background-color: #7268ad;
+	text-align: center;
+	color: white;
+    border-radius: 5px;
+    height: 50px;
+    width: 200px;    
+}
